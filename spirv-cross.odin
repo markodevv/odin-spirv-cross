@@ -5,25 +5,25 @@ import "core:c"
 when ODIN_OS == .Windows 
 {
   foreign import spvc {
-    "./spirv-cross-c.lib",
-    "./spirv-cross-core.lib",
-    "./spirv-cross-glsl.lib",
-    "./spirv-cross-hlsl.lib",
-    "./spirv-cross-msl.lib",
-    "./spirv-cross-reflect.lib",
-    "./spirv-cross-cpp.lib",
+    "./libs/spirv-cross-c.lib",
+    "./libs/spirv-cross-core.lib",
+    "./libs/spirv-cross-glsl.lib",
+    "./libs/spirv-cross-hlsl.lib",
+    "./libs/spirv-cross-msl.lib",
+    "./libs/spirv-cross-reflect.lib",
+    "./libs/spirv-cross-cpp.lib",
   }
 }
 else when ODIN_OS == .Linux
 {
   foreign import spvc {
-    "./libspirv-cross-c.a",
-    "./libspirv-cross-core.a",
-    "./libspirv-cross-glsl.a",
-    "./libspirv-cross-hlsl.a",
-    "./libspirv-cross-msl.a",
-    "./libspirv-cross-reflect.a",
-    "./libspirv-cross-cpp.a",
+    "./libs/libspirv-cross-c.a",
+    "./libs/libspirv-cross-core.a",
+    "./libs/libspirv-cross-glsl.a",
+    "./libs/libspirv-cross-hlsl.a",
+    "./libs/libspirv-cross-msl.a",
+    "./libs/libspirv-cross-reflect.a",
+    "./libs/libspirv-cross-cpp.a",
   }
 }
 
